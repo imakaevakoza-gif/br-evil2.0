@@ -67,6 +67,7 @@ async function processQueue() {
     setTimeout(processQueue, 500);
 }
 
+// ИСПРАВЛЕНО: Убран символ @, теперь синтаксис Express верный
 app.get('/', (req, res) => {
     res.json({ status: "working", message: "Node.js queue-backend is running cleanly!" });
 });
